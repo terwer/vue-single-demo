@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Vue</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <style type="text/css">
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <tabs>
+        <tab>Tab content 1.</tab>
+        <tab>Tab content 2.</tab>
+    </tabs>
+    <h1 :title="msg">Hello, single Vue!</h1>
+    <!-- <router-view></router-view> -->
+</div>
+
+<!-- vue -->
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- uiv, bootstrap 3 in vue -->
+<script type="text/javascript" src="https://unpkg.com/uiv"></script>
+<!-- <script src="https://unpkg.com/http-vue-loader"></script >-->
+<!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+<!-- v-selectpage -->
+<!-- <script src="https://unpkg.com/v-selectpage@1.0.15/dist/v-selectpage.js"></script> -->
+<script type="text/javascript">
+    // Vue.use(VueRouter);
+    // Vue.use(vSelectPage, {});
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            msg: 'Hello'
+        }
+    });
+</script>
+</body>
+</html>
